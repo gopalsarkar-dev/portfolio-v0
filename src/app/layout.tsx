@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import "./globals.css";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/providers/ThemeProvider";
+import BottomTab from "@/components/BottomTab";
 
 type RootLayoutprovider = {
   children: ReactNode;
@@ -20,6 +21,9 @@ const RootLayout = ({ children }: RootLayoutprovider) => {
           <main className="container mx-auto max-w-screen-lg px-6">
             {children}
           </main>
+          <footer>
+            <BottomTab />
+          </footer>
         </ThemeProvider>
       </body>
     </html>
