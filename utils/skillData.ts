@@ -9,6 +9,8 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiPrisma,
+  SiFastify,
 } from "react-icons/si";
 import { TbBrandMysql, TbBrandVite } from "react-icons/tb";
 
@@ -77,8 +79,13 @@ export const BackendSkill = [
     iconSize: 100,
   },
   {
-    icon: TbBrandMysql,
-    name: "Mysql",
+    icon: SiPrisma,
+    name: "Prisma",
+    iconSize: 100,
+  },
+  {
+    icon: SiFastify,
+    name: "Fastify ",
     iconSize: 100,
   },
 ];
