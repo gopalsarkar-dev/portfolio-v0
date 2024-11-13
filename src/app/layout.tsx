@@ -18,12 +18,11 @@ const RootLayout = ({ children }: RootLayoutprovider) => {
           enableSystem={false}
         >
           <Header />
-          <main className="container mx-auto max-w-screen-lg px-6">
+          <main className="container mx-auto max-w-screen-lg px-6 my-14">
             {children}
           </main>
-          <footer>
-            <BottomTab />
-          </footer>
+
+          <BottomTab />
         </ThemeProvider>
       </body>
     </html>
