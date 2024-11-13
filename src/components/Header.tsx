@@ -14,7 +14,7 @@ const Header = () => {
               width={28}
               height={28}
             />
-            <div className="bg-gradient-to-b from-neutral-900 to-neutral-900 bg-clip-text text-xl font-bold text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400">
+            <div className="text-neutral-900 dark:bg-clip-text text-xl font-bold dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400">
               Gopal
             </div>
           </Link>

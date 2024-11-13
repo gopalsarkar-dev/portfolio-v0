@@ -7,9 +7,9 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <div className="grid place-items-center h-[85dvh]">
-        <div className="grid gap-10 place-items-center">
-          <div className="sm:text-6xl text-center text-5xl font-bold bg-gradient-to-b from-neutral-500 to-neutral-200 bg-clip-text text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 ">
+      <div className="grid place-items-center h-screen">
+        <div className="grid gap-8 place-items-center">
+          <div className="text-center text-5xl font-bold text-neutral-900 dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-clip-text dark:text-transparent sm:text-6xl">
             Hi<span className="text-2xl">,</span> I am Gopal Sarkar
             <span className="text-2xl">,</span> Frontend
             <br className="" /> & Backend Developer.
