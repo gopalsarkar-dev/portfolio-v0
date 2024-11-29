@@ -3,6 +3,13 @@ import { BiSolidPhoneCall, BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+import { aboutPageSeo } from "../../utils/pageSeoInfo";
+
+// page title and generateMetadata
+export const generateMetadata = (): Metadata => {
+  return aboutPageSeo;
+};
 
 const page = () => {
   return (
@@ -15,7 +22,7 @@ const page = () => {
             <br className="" /> & Backend Developer.
           </div>
 
-          <Image src="/gopal.png" alt="logo" width={200} height={200} />
+          <Image src="/favicon.ico" alt="logo" width={200} height={200} />
 
           <div className="grid grid-flow-col gap-3 sm:gap-5">
             <Link href="tel: 7477757792">

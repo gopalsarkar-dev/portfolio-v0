@@ -8,6 +8,13 @@ import {
 import { projectData } from "../../../utils/projectInfo";
 import { Button } from "@/components/ui/button";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Metadata } from "next";
+import { projectPageSeo } from "../../../utils/pageSeoInfo";
+
+// page title and generateMetadata
+export const generateMetadata = (): Metadata => {
+  return projectPageSeo;
+};
 
 const page = () => {
   return (

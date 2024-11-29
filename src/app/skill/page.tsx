@@ -1,5 +1,12 @@
 import { Card, CardHeader } from "@/components/ui/card";
 import { BackendSkill, CloudData, SkillData } from "../../../utils/skillData";
+import { Metadata } from "next";
+import { skillPageSeo } from "../../../utils/pageSeoInfo";
+
+// page title and generateMetadata
+export const generateMetadata = (): Metadata => {
+  return skillPageSeo;
+};
 
 const page = () => {
   return (

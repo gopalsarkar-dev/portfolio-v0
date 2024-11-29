@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container mx-auto flex max-w-screen-lg items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/gopal.png"
+              src="/favicon.ico"
               alt="portfolio-icon"
               width={28}
               height={28}
