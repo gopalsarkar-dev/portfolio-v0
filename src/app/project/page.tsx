@@ -1,15 +1,21 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { projectData } from "../../../utils/projectInfo";
-import { Button } from "@/components/ui/button";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Metadata } from "next";
+import "swiper/css/effect-cards";
 import { projectPageSeo } from "../../../utils/pageSeoInfo";
+
+import SwiperCardInfo from "@/components/SwiperCardInfo";
+
+import {
+  backendProjectInfo,
+  frontendProjectInfo,
+} from "../../../utils/projectInfo";
+
+import "swiper/css/effect-cards";
+
+import "swiper/css/navigation";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 // page title and generateMetadata
 export const generateMetadata = (): Metadata => {
@@ -23,30 +29,33 @@ const page = () => {
         <div className="text-neutral-900 dark:bg-clip-text text-5xl font-bold dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 sm:text-6xl">
           All Project
         </div>
-        <div className="grid grid-flow-row gap-8 sm:grid-cols-2">
-          {projectData.map((info, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>
-                  <div className="text-3xl font-bold text-neutral-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400">
-                    {info.title}
-                  </div>
-                </CardTitle>
-                <CardDescription>
-                  <p className="text-lg">
-                    <span className="font-bold">Description: </span>
-                    {info.desription}
-                  </p>
-                </CardDescription>
-              </CardHeader>
+        <div className="grid place-items-center">
+          <Tabs defaultValue="frontend-project" className="">
+            <TabsList className="">
+              <TabsTrigger value="frontend-project">
+                Frontend Project
+              </TabsTrigger>
+              <TabsTrigger value="fullstack-project">
+                Full-Stack Project
+              </TabsTrigger>
+            </TabsList>
 
-              <CardContent>
-                <Button size={"lg"}>
-                  Github <FaArrowUpRightFromSquare />
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+            <TabsContent value="frontend-project" className="mt-8">
+              <div className="grid gap-8 sm:grid-cols-2">
+                {frontendProjectInfo.map((pInfo, pIndex) => (
+                  <SwiperCardInfo info={pInfo} key={pIndex} />
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="fullstack-project" className="mt-8">
+              <div className="grid grid-flow-row gap-8 sm:grid-cols-2">
+                {backendProjectInfo.map((pInfo, pIndex) => (
+                  <SwiperCardInfo info={pInfo} key={pIndex} />
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </>
