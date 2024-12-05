@@ -28,11 +28,10 @@ type ProjectInfoType = {
 const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
   return (
     <>
-      <Card className="max-w-sm cursor-pointer sm:max-w-screen-lg">
+      <Card className="max-w-sm sm:max-w-screen-lg">
         <CardHeader>
           <CardTitle>
             <Swiper
-              className=""
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -60,7 +59,7 @@ const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
           </p>
         </CardContent>
         <CardFooter>
-          <Button size={"lg"}>
+          <Button size={"lg"} className="w-full">
             Github <FaArrowUpRightFromSquare />
           </Button>
         </CardFooter>
