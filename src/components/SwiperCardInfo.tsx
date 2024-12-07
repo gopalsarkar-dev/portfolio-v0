@@ -54,9 +54,7 @@ const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
         </CardHeader>
         <CardContent className="space-y-2 pb-4">
           <div className="text-2xl font-bold">{info.title}</div>
-          <p className="text-justify text-lg">
-            <span className="font-bold">Description:</span> {info.desription}
-          </p>
+          <p className="text-justify">{info.desription}</p>
         </CardContent>
         <CardFooter>
           <Button size={"lg"} className="w-full">

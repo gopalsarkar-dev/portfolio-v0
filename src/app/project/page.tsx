@@ -25,7 +25,7 @@ export const generateMetadata = (): Metadata => {
 const page = () => {
   return (
     <>
-      <div className="pb-14 mt-20 space-y-5">
+      <div className="pb-14 mt-20 space-y-8">
         <div className="text-neutral-900 dark:bg-clip-text text-5xl font-bold dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 sm:text-6xl">
           All Project
         </div>
@@ -33,7 +33,7 @@ const page = () => {
           Recentely I completed my all Project !
         </div> */}
 
-        <Tabs defaultValue="fullstack-project" className="space-y-5">
+        <Tabs defaultValue="fullstack-project" className="space-y-8">
           <TabsList className="grid grid-cols-2">
             <TabsTrigger value="fullstack-project">
               Full-Stack Project
@@ -42,7 +42,7 @@ const page = () => {
           </TabsList>
 
           <TabsContent value="frontend-project">
-            <div className="grid sm:grid-cols-2 grid-cols-1 gap-5">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
               {frontendProjectInfo.map((pInfo, pIndex) => (
                 <SwiperCardInfo info={pInfo} key={pIndex} />
               ))}
