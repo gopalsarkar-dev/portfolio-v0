@@ -18,9 +18,11 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 type ProjectInfoType = {
   title: string;
+  link: string;
   imag: string[];
   desription: string;
 };
@@ -57,9 +59,11 @@ const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
           <p className="text-justify">{info.desription}</p>
         </CardContent>
         <CardFooter>
-          <Button size={"lg"} className="w-full">
-            Github <FaArrowUpRightFromSquare />
-          </Button>
+          <Link href={info.link}>
+            <Button size={"lg"} className="w-full">
+              Github <FaArrowUpRightFromSquare />
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </>
