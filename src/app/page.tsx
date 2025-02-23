@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { BiSolidPhoneCall, BiLogoGmail } from "react-icons/bi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
+import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { aboutPageSeo } from "../../utils/pageSeoInfo";
 
 // page title and generateMetadata

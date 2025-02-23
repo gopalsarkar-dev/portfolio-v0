@@ -1,8 +1,8 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import { FiSun } from "react-icons/fi";
 import { LuMoonStar } from "react-icons/lu";
-import { useTheme } from "next-themes";
 
 const ToggelTheme = () => {
   const { theme, setTheme } = useTheme();

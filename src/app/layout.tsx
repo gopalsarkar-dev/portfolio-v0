@@ -1,8 +1,7 @@
-import { ReactNode } from "react";
-import "./globals.css";
+import BottomTab from "@/components/BottomTab";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/providers/ThemeProvider";
-import BottomTab from "@/components/BottomTab";
+import { ReactNode } from "react";
 
 type RootLayoutprovider = {
   children: ReactNode;

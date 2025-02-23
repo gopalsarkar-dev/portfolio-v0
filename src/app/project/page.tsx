@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Metadata } from "next";
-import "swiper/css/effect-cards";
+// import "swiper/css/effect-cards";
 import { projectPageSeo } from "../../../utils/pageSeoInfo";
 
 import SwiperCardInfo from "@/components/SwiperCardInfo";
@@ -10,12 +10,12 @@ import {
   frontendProjectInfo,
 } from "../../../utils/projectInfo";
 
-import "swiper/css/effect-cards";
+// import "swiper/css/effect-cards";
 
-import "swiper/css/navigation";
+// import "swiper/css/navigation";
 
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 
 // page title and generateMetadata
 export const generateMetadata = (): Metadata => {

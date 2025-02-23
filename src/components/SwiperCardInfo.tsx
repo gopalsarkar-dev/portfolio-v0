@@ -9,16 +9,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import "swiper/css/effect-cards";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css/effect-cards";
+// import { Pagination } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css/navigation";
+// import "swiper/css/navigation";
 
 import Image from "next/image";
-import "swiper/css";
-import "swiper/css/pagination";
 import Link from "next/link";
+// import "swiper/css";
+// import "swiper/css/pagination";
 
 type ProjectInfoType = {
   title: string;
@@ -33,7 +33,7 @@ const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
       <Card className="max-w-sm sm:max-w-screen-lg">
         <CardHeader>
           <CardTitle>
-            <Swiper
+            {/* <Swiper
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -51,7 +51,7 @@ const SwiperCardInfo = ({ info }: { info: ProjectInfoType }) => {
                   />
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </Swiper> */}
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 pb-4">

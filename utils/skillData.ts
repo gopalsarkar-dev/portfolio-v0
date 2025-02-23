@@ -1,18 +1,12 @@
+import { DiGoogleCloudPlatform, DiPostgresql } from "react-icons/di";
 import { FaDigitalOcean, FaReact } from "react-icons/fa";
 import { FaAws, FaBootstrap, FaHtml5 } from "react-icons/fa6";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
-import { RiNextjsLine, RiNodejsLine } from "react-icons/ri";
-import {
-  SiDirectus,
-  SiGooglecloud,
-  SiMicrosoftazure,
-  SiPostgresql,
-  SiTailwindcss,
-  SiTypescript,
-  SiPrisma,
-  SiFastify,
-} from "react-icons/si";
-import { TbBrandMysql, TbBrandVite } from "react-icons/tb";
+import { IoPrism } from "react-icons/io5";
+import { RiNextjsLine, RiNodejsLine, RiTailwindCssFill } from "react-icons/ri";
+import { VscAzure } from "react-icons/vsc";
+
+import { TbBrandVite } from "react-icons/tb";
 
 export const SkillData = [
   {
@@ -36,12 +30,12 @@ export const SkillData = [
     iconSize: 100,
   },
   {
-    icon: SiTypescript,
+    icon: "",
     name: "Typescript",
     iconSize: 100,
   },
   {
-    icon: SiTailwindcss,
+    icon: RiTailwindCssFill,
     name: "Tailwindcss",
     iconSize: 100,
   },
@@ -69,22 +63,22 @@ export const BackendSkill = [
     iconSize: 100,
   },
   {
-    icon: SiDirectus,
+    icon: "",
     name: "Directus",
     iconSize: 100,
   },
   {
-    icon: SiPostgresql,
+    icon: DiPostgresql,
     name: "Postgresql",
     iconSize: 100,
   },
   {
-    icon: SiPrisma,
+    icon: IoPrism,
     name: "Prisma",
     iconSize: 100,
   },
   {
-    icon: SiFastify,
+    icon: "",
     name: "Fastify ",
     iconSize: 100,
   },
@@ -97,12 +91,12 @@ export const CloudData = [
     iconSize: 100,
   },
   {
-    icon: SiGooglecloud,
+    icon: DiGoogleCloudPlatform,
     name: "Googlecloud",
     iconSize: 100,
   },
   {
-    icon: SiMicrosoftazure,
+    icon: VscAzure,
     name: "Microsoftazure",
     iconSize: 100,
   },
